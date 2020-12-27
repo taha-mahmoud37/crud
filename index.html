@@ -1,0 +1,52 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/all.min.css">
+        <link rel="stylesheet" href="css/index_style.css">
+    </head>
+    <body>
+       <div class="container py-3">
+           <div class="form-group">
+               <label>productName :</label>
+               <input class="form-control" id="productNameInp">
+               <small class="text-muted">8-80 carachtar</small>
+           </div>
+           <div class="form-group">
+            <label>productPrice :</label>
+            <input class="form-control" id="productPriceInp">
+            <small class="text-muted">8-80 carachtar</small>
+           </div>
+           <div class="form-group">
+            <label>productCategory :</label>
+            <input class="form-control" id="productCategoryInp">
+            <small class="text-muted">8-80 carachtar</small>
+           </div>
+           <div class="form-group">
+            <label>productdesc :</label>
+            <input class="form-control" id="productDescInp">
+            <small class="text-muted">8-80 carachtar</small>
+           </div>
+
+           <button onclick="addProduct()" class="btn btn-outline-info float-right" id="button">addProduct</button>
+           <div class="clearfix"></div>
+
+       </div>
+       <div class="container-fluid py-3">
+           <h4 class="text-center mb-4">Our Product </h4>
+           <input onkeyup="searchProduct(this.value)" placeholder="search" class="form-control w-50 m-auto">
+
+           <div class="row mt-5" id="productRow" >
+
+               
+           </div>
+
+
+       </div>
+
+
+
+
+
+        <script src="js/first.js"></script>
+    </body>
+</html>
